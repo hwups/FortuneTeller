@@ -19,7 +19,8 @@ Ask a question in your heart, click the magic button, and get a random fortune! 
 
 ## 📸 Preview
 
-![Fortune Teller Screenshot](screenshot.png)
+<img width="765" height="528" alt="{2B2D7C52-B85C-4079-AA11-D12305C13D16}" src="https://github.com/user-attachments/assets/251bf4fc-6df6-4f09-a6f2-5aa09ff63a60" />
+
 
 ## 🤔 Why?
 
