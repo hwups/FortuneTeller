@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fortune Teller</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .fortune-container {
+            background: #fff;
+            padding: 2em 3em;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(60,60,120,0.16), 0 1.5px 6px #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin-bottom: 0.7em;
+            color: #5a4c99;
+        }
+        #fortune {
+            margin: 1.5em 0 0.5em 0;
+            font-size: 1.4em;
+            color: #444;
+            min-height: 2em;
+            text-align: center;
+        }
+        button {
+            background: linear-gradient(90deg, #7f7fd5 0%, #86a8e7 100%);
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            padding: 0.7em 2em;
+            font-size: 1.1em;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(120,120,200,0.13);
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+        }
+        .footer {
+            margin-top: 2em;
+            font-size: 0.95em;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="fortune-container">
+        <h1>Fortune Teller</h1>
+        <p>Ask a question in your heart, then click the button below to receive your fortune.</p>
+        <button onclick="tellFortune()">Reveal My Fortune</button>
+        <div id="fortune"></div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Fortune Teller by Copilot
+    </div>
+    <script>
+        const fortunes = [
+            "Good luck is coming your way.",
+            "A new opportunity will present itself soon.",
+            "You will find happiness where you least expect it.",
+            "Be patient; something wonderful is about to happen.",
+            "Now is the time to try something new.",
+            "A pleasant surprise awaits you.",
+            "Trust your instincts—they will lead you right.",
+            "Someone close to you has good news.",
+            "Success is within reach—keep going!",
+            "Fortune favors the brave.",
+            "An old friend will reappear in your life.",
+            "Stay positive and good things will happen.",
+            "Your hard work will soon pay off.",
+            "You are about to embark on a new adventure.",
+            "A small act of kindness will return to you tenfold.",
+            "Keep an open mind to new possibilities.",
+            "A dream you have will soon come true.",
+            "The answer you seek is already within you.",
+            "A smile is your personal lucky charm today.",
+            "Expect the unexpected."
+        ];
+        function tellFortune() {
+            const idx = Math.floor(Math.random() * fortunes.length);
+            const fortune = fortunes[idx];
+            document.getElementById('fortune').textContent = fortune;
+        }
+    </script>
+</body>
+</html>
